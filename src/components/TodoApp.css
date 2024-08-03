@@ -1,0 +1,148 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+  
+.todo-container {
+    background: #fff;
+    padding: 100px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 500px;
+    box-sizing: border-box;
+}
+  
+
+.todo-container h1 {
+    margin: 0 0 20px;
+    font-size: 24px;
+    text-align: center;
+}
+  
+
+.todo-form {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+  
+.todo-form input {
+    flex: 1;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+  
+.todo-form button {
+    padding: 10px 20px;
+    border: none;
+    background-color: #007bff;
+    color: #fff;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+  
+.todo-form button:hover {
+    background-color: #0056b3;
+}
+  
+
+.todo-list {
+    list-style: none;
+    padding: 0;
+    margin: 20px 0 0;
+}
+  
+.todo-list li {
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    border-bottom: 1px solid #eee;
+    justify-content: space-between;
+}
+  
+.todo-list li:last-child {
+    border-bottom: none;
+}
+
+
+.todo-content {
+    flex: 1;
+    display: flex;
+    align-items: center;
+}
+
+.todo-text {
+    font-size: 16px;
+    margin-right: 10px;
+    cursor: pointer;
+}
+
+.todo-text.completed {
+    color: #999;
+    text-decoration: line-through;
+}
+
+.todo-text.incomplete {
+    color: #000;
+}
+
+
+.btn-primary {
+    padding: 6px 12px;
+    border: none;
+    background-color: #007bff;
+    color: #fff;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    margin-left: 4px;
+}
+
+.btn-primary:hover {
+    background-color: #0056b3;
+}
+
+
+.todo-actions {
+    display: flex;
+    align-items: center;
+}
+
+
+.todo-filters {
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+  
+.todo-filters button {
+    flex: 1;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s, border-color 0.3s;
+    background-color: #f9f9f9;
+}
+  
+.todo-filters button:hover {
+    background-color: #007bff;
+    color: #fff;
+    border-color: #007bff;
+}
+  
+.todo-filters .active {
+    background-color: #007bff;
+    color: #fff;
+    border-color: #007bff;
+}
